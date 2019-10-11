@@ -2,7 +2,7 @@ from __future__ import print_function
 from dex import get_pokemon_data, get_pokemon_learnset, get_move
 import os, sys
 
-print ("Bienvenido")
+print ("Bienvenido a PyDex")
 name_pokemon = ""
 
 
