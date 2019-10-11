@@ -86,6 +86,19 @@ while(pokedex_on):
         print('\nMovimientos que puede aprender el pokémon: ')
         for move in get_pokemon_learnset(name_pokemon):
             print('  - ', str(get_move(move)['name']))
+        '''
+        * La función 'get_pokemon_learnset' devuelve una lista con todos los ataques que puede realizar el Pokémon buscado
+            Ejemplo: ["amnesia","attract","bide","bind","block",(...),"bodyslam","workup","worryseed",]
+        * La función 'get_move' devuelve un diccionario que contiene el detalle del movimiento, sus principales llaves son las siguiente:
+            {
+
+            "basePower" -> Es un valor int y contiene el poder base del ataque, Ejemplo: 195,
+            "category" -> Es un valor str y la categoría del ataque si es Físico(Physical), Especial(Special) o de Estado(Status)
+                        Ejemplo: "Special",
+            "name" -> Es un valor str y contiene el nombre del ataque, Ejemplo: "Play Rought",
+            "type" -> Contiene un valor str y almacena el tipo del ataque, Ejemplo: "Electric",
+            }
+        '''
     else:# En caso de que no se encuentre el Pokémon muestra un muestra un mensaje de no encontrado
         print("Pokemon no encontrado")
 
