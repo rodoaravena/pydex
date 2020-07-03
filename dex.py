@@ -5,8 +5,9 @@ import json
 
 def load_db(dex_db=None):
     try:
-        db_file = open('dexdb.json')
+        db_file = open('dexdb.json', 'r')
         data = json.load(db_file)
+        db_file.close()
         if dex_db is not None:
             return data[dex_db]
         else:

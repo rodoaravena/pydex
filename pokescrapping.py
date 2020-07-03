@@ -57,8 +57,6 @@ def download_photo(pnum):
     except Exception as e:
         logging.error('Error al intentar descargar la imagen')
         return False
-        # print("Error Occured for Pokemon " + '{:04d}'.format(pnum))
-        # print(str(e))
 
 def scrapping():
     '''
